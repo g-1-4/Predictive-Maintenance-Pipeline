@@ -27,6 +27,10 @@ jobs:
           export PYTHONPATH=$PYTHONPATH:$(pwd)
           pytest --maxfail=1 --disable-warnings -q
 
+      - name: Train model
+        run: |
+          python models/train_model.py
+
       - name: Build Docker image
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/secure-ml-api:latest .
