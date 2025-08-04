@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  ml-api:
+    image: gowtham14sriram/secure-ml-api:latest
+    container_name: ml-api-service
+    ports:
+      - "8000:8000"
+    restart: always
