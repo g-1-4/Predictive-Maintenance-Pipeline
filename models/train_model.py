@@ -14,7 +14,7 @@ df = df.drop(columns=["UDI","Product ID", "Failure Type"])
 
 
 x = df.drop(columns=["Target"])
-y = df[""]
+y = df["Target"]
 
 numeric_features = ["Air temperature [K]", "Process temperature [K]", "Rotational speed [rpm]", "Torque [Nm]", "Tool wear [min]"]
 categorical_features = ["Type"]
