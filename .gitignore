@@ -20,7 +20,6 @@ venv/
 *.env
 
 # Model files
-*.pkl
 *.joblib
 
 # IDE / Editor files
