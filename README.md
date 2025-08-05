@@ -47,7 +47,3 @@ This dataset is ideal for:
 - **Predictive Maintenance** — Forecasting potential equipment failures.
 - **Classification Modeling** — Identifying machines likely to fail.
 - **Feature Importance Analysis** — Determining which machine parameters most influence failures.
-
----
-
-> **Source:** The dataset is typically used in predictive maintenance research and industrial machine learning case studies.
