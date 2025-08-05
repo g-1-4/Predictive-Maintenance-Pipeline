@@ -6,7 +6,7 @@ def test_model_file_exists_and_not_empty():
 
 def test_model_training_runs():
     import subprocess
-    result = subprocess.run(["python", "app/model_training.py"], capture_output=True)
+    result = subprocess.run(["python", "models/model_training.py"], capture_output=True)
     assert result.returncode == 0, f"Training script failed:\n{result.stderr.decode()}"
 
 def test_prediction_output_format():
