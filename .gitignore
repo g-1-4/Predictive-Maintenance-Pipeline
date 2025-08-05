@@ -1,4 +1,3 @@
-# Python
 __pycache__/
 *.py[cod]
 *.pyo
@@ -7,36 +6,29 @@ __pycache__/
 *.sqlite3
 *.log
 
-# Virtual environment
 venv/
 .env
 .venv/
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
 
-# Environment variables
-.env
-*.env
 
-# Model files
 *.joblib
 
-# IDE / Editor files
+
 .vscode/
 .idea/
 *.swp
 
-# Build and cache
+
 *.egg-info/
 dist/
 build/
 
-# Docker
+
 *.pid
 *.tar
 docker-compose.override.yml
 
-# OS files
+
 .DS_Store
 Thumbs.db
