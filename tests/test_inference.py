@@ -4,6 +4,11 @@ import os
 def test_model_file_exists_and_not_empty():
     assert os.path.exists("models/predictive_maintenance_model.pkl"), "Model file is missing"
 
+def test_model_training_runs():
+    import subprocess
+    result = subprocess.run(["python", "app/model_training.py"], capture_output=True)
+    assert result.returncode == 0, f"Training script failed:\n{result.stderr.decode()}"
+
 def test_prediction_output_format():
     from app.inference import predict
     sample_input = {
