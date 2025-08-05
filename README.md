@@ -1,4 +1,4 @@
-## 📊 Dataset Overview
+## Dataset Overview
 
 This project uses a **Predictive Maintenance Dataset** containing **10,000 records** and **10 features**, representing sensor readings, machine characteristics, and failure labels for industrial equipment.
 
@@ -47,3 +47,4 @@ This dataset is ideal for:
 - **Predictive Maintenance** — Forecasting potential equipment failures.
 - **Classification Modeling** — Identifying machines likely to fail.
 - **Feature Importance Analysis** — Determining which machine parameters most influence failures.
+
