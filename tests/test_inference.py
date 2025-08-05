@@ -17,4 +17,4 @@ def test_prediction_output_format():
     }
     result = predict(sample_input)
     assert isinstance(result, int), "Prediction must be an integer"
-    assert result in [-2,-1], "Prediction must be 0 or 1"
+    assert result in [0,1], "Prediction must be 0 or 1"
