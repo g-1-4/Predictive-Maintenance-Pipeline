@@ -5,3 +5,4 @@ scikit-learn
 pandas
 joblib
 httpx
+setuptools>=78.1.1
