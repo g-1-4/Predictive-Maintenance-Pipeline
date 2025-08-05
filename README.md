@@ -46,5 +46,5 @@ This project uses a **Predictive Maintenance Dataset** containing **10,000 recor
 This dataset is ideal for:
 - **Predictive Maintenance** — Forecasting potential equipment failures.
 - **Classification Modeling** — Identifying machines likely to fail.
-- **Feature Importance Analysis** — Determining which machine parameters most influence failures.
+
 
