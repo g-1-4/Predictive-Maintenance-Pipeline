@@ -21,7 +21,6 @@ data/*.csv
 
 tests/
 
-# Docker-specific
 Dockerfile
 docker-compose.yml
 .dockerignore
