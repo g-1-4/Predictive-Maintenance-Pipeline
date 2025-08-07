@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   ml-api:
-    image: gowtham14sriram/predictive-maintenance-api:v1.1.0
+    image: gowtham14sriram/secure-ml-api:latest
     container_name: ml-api-service-v1.1.0
     ports:
       - "8000:8000"
