@@ -2,8 +2,10 @@ version: "3.8"
 
 services:
   ml-api:
-    image: gowtham14sriram/predictive-maintenance-api:v1.0.1
-    container_name: ml-api-service-v1.0.1
+    image: gowtham14sriram/predictive-maintenance-api:v1.1.0
+    container_name: ml-api-service-v1.1.1
     ports:
       - "8000:8000"
     restart: always
+    env_file:
+      - .env
