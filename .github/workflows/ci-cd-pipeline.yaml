@@ -24,12 +24,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pytest
+          export SUPABASE_URL=${{ secrets.SUPABASE_URL }}
+          export SUPABASE_KEY=${{ secrets.SUPABASE_KEY }}
           export PYTHONPATH=$PYTHONPATH:$(pwd)
           pytest --maxfail=1 --disable-warnings -q
 
       - name: Build Docker image
         run: |
-          IMAGE_NAME=gowtham14sriram/secure-ml-api
+          IMAGE_NAME=${{ secrets.DOCKER_USERNAME }}/secure-ml-api
           IMAGE_TAG=${GITHUB_SHA::7}
           echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
           echo "IMAGE_TAG=$IMAGE_TAG" >> $GITHUB_ENV
