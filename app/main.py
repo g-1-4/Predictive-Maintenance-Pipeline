@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from app.schemas import predictionRequest
 from app.inference import predict
+from utils.logger import log_prediction
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -30,4 +31,5 @@ def get_prediction(data: predictionRequest):
     "Tool wear [min]": data.Tool_wear
     }
     result = predict(features)
+    log_prediction(features, result)
     return {"Prediction": result}

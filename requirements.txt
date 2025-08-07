@@ -6,3 +6,5 @@ pandas
 joblib
 httpx
 setuptools>=78.1.1
+supabase>=2.3.4
+python-dotenv>=1.0.1
