@@ -5,7 +5,7 @@ def test_supabase_connection():
     url = os.getenv("SUPABASE_URL")
     key = os.getenv("SUPABASE_KEY")
     client = create_client(url, key)
-    
-    res = client.table("prediction_logs").select("*").limit(1).execute()   
-    assert res.error is None, f"Supabase returned an error: {res.error}"
-    assert isinstance(res.data, list), "Data returned is not a list"
+
+    res = client.table("prediction_logs").select("*").limit(1).execute()
+    assert res.data is not None, "No data returned from Supabase"
+    assert isinstance(res.data, list), "Expected a list of results"
