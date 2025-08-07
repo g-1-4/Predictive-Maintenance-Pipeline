@@ -25,7 +25,7 @@ jobs:
           pip install -r requirements.txt
           pip install pytest
           export SUPABASE_URL=${{ secrets.SUPABASE_URL }}
-          export SUPABASE_KEY=${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          export SUPABASE_KEY=${{ secrets.SUPABASE_KEY }}
           export PYTHONPATH=$PYTHONPATH:$(pwd)
           pytest --maxfail=1 --disable-warnings -q
 
