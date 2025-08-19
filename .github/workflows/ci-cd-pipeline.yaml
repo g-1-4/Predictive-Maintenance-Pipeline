@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - logger
   pull_request:
 
 jobs:
